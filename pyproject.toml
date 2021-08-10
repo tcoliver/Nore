@@ -34,10 +34,16 @@ pytest-cov = "^2.12.1"
 flake8 = "^3.9.2"
 mypy = "^0.910"
 black = {version = "^21.6b0", allow-prereleases = true}
+bandit = "^1.7.0"
 isort = "^5.9.3"
+tomlkit = "^0.7.2"
+
 
 [tool.poetry.scripts]
 nore = "nore.main:app"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

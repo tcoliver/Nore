@@ -1,5 +1,6 @@
-from nore.util import minimize_path
 import pathlib
+
+from nore.util import minimize_path
 
 
 class TestMinimizePath:

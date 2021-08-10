@@ -1,5 +1,4 @@
 import pathlib
-from dataclasses import dataclass
 
 import click
 
@@ -11,6 +10,12 @@ from .new import download_gitignore
 @click.group()
 @click.version_option(app_version)
 def app():
+    """
+    Nore is a simple utility for managing .gitignore files.
+
+    You can download the .gitignore for any environment listed in the main
+    portion of the github/gitingore repository.
+    """
     pass
 
 
@@ -42,6 +47,12 @@ def new(environment: str, output_path: pathlib.Path):
 
 @app.command(name="list")
 def _list():
+    """
+    List all available environments.
+
+    Returns a list of environment identifiers from the main templates on the
+    github/gitignore repository.
+    """
     print_environment_list()
 
 
