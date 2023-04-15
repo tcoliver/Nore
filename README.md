@@ -1,4 +1,4 @@
-# nore -- Completely Unnecessary .gitignore Management
+# nore -- .gitignore Management
 
 ## Features
 
